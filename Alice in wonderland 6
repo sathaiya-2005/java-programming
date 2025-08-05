@@ -8,14 +8,13 @@ public class Solution {
         Scanner obj = new Scanner(System.in); 
         int num = obj.nextInt(); 
 
-        int firstDigit = num / 10; 
-        int secondDigit = num % 10; 
+        int firstnum = num / 10; 
+        int secondnum = num % 10; 
 
-        int sumOfDigits = firstDigit + secondDigit; 
+        int sum = firstnum + secondnum; 
 
         System.out.println("Bird said:" + num ); 
-        System.out.println("Alice must go in path-" + sumOfDigits); 
+        System.out.println("Alice must go in path-" + sum); 
         
     }
 }
-
