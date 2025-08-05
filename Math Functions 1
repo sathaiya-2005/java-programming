@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        Scanner obj= new Scanner(System.in); 
+
+        float floatValue = obj.nextFloat(); 
+        int squareRootValue = obj.nextInt(); 
+        int baseValue = obj.nextInt(); 
+        int powerValue = obj.nextInt(); 
+  
+        int floorResult = (int) Math.floor(floatValue); 
+        int ceilResult = (int) Math.ceil(floatValue);        
+        int sqrtResult = (int) Math.sqrt(squareRootValue);  
+        int powResult = (int) Math.pow(baseValue, powerValue); 
+       
+        System.out.println(floorResult); 
+        System.out.println(ceilResult);
+        System.out.println(sqrtResult);
+        System.out.println(powResult);
+    }
+}
