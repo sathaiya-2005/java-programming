@@ -3,8 +3,8 @@ import java.util.*;
 
 public class Solution {
 
-    public static void main(String[] args) {
-        
+    public static void main(String[] args)
+    {
         Scanner obj = new Scanner(System.in); 
 
         int x1 = obj.nextInt(); 
@@ -12,10 +12,10 @@ public class Solution {
         int x2 = obj.nextInt();  
         int y2 = obj.nextInt();  
 
-        float midX = (float) (x1 + x2) / 2; 
-        float midY = (float) (y1 + y2) / 2; 
+        float midx = (float) (x1 + x2) / 2; 
+        float midy = (float) (y1 + y2) / 2; 
 
-        System.out.printf("Binoy's house is located at (%.1f,%.1f)", midX, midY); 
+        System.out.printf("Binoy's house is located at (%.1f,%.1f)", midx, midy); 
         
     }
 }
