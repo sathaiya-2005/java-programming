@@ -1,0 +1,12 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner obj= new Scanner(System.in);
+        String i1 = obj.next();
+        String o1 = ("May I know how to learn "+ i1+"!!!..." );
+        System.out.println(o1);       
+    }
+}
