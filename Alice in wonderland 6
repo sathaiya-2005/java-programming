@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in); 
+        int num = scanner.nextInt(); 
+
+        int firstDigit = num / 10; 
+        int secondDigit = num % 10; 
+
+        int sumOfDigits = firstDigit + secondDigit; 
+
+        System.out.println("Bird said:" + num ); 
+        System.out.println("Alice must go in path-" + sumOfDigits); 
+        
+    }
+}
+
