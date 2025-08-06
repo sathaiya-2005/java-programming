@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int num = obj.nextInt(); 
+        
+        
+        if (num >= 100 && num <= 999) { 
+            int originalNum = num; 
+            int reversedNum = 0; 
+
+            while (num != 0) { 
+                int digit = num % 10; 
+                reversedNum = reversedNum * 10 + digit; 
+                num /= 10; 
+            }
+
+            if (originalNum == reversedNum) { 
+                System.out.println("palindrome");
+            } else {
+                System.out.println("not palindrome");
+            }
+        } else {
+            System.out.println("Invalid Input"); 
+        }
+         
+    }
+}
