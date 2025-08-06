@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        char input = obj.next().charAt(0); 
+        
+        if (input == 'A' || input == 'E' || input == 'I' || input == 'O' || input == 'U' ||
+            input == 'a' || input == 'e' || input == 'i' || input == 'o' || input == 'u') {
+            System.out.println("The Character " + input + " is Vowel");
+        } else {
+            System.out.println("The Character " + input + " is Consonant");
+        }
+    }
+}
