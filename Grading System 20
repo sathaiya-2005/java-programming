@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) 
+    {
+        Scanner obj = new Scanner(System.in);
+        
+        String name = obj.nextLine();
+        int mark1 = obj.nextInt(); 
+        int mark2 = obj.nextInt();
+        int mark3 = obj.nextInt();
+        int mark4 = obj.nextInt();
+        int mark5 = obj.nextInt();
+        
+        int total_marks = mark1+mark2+mark3+mark4+mark5;
+        float average_marks = total_marks/5.0f;
+        
+        System.out.println("Name of the Student:" +name);
+        System.out.println("Total Mark:" +total_marks);
+        System.out.println("Average Mark:" +average_marks);
+        
+        if(average_marks > 90)
+        {
+            System.out.println("Grade Mark:A");
+        }
+        else
+        {
+            System.out.println("Grade Mark:Fail");
+        }
+        
+    }
+        
+}
