@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner obj = new Scanner(System.in);
+        
+        int input = obj.nextInt(); 
+        
+        if(input == 0)
+        {
+            System.out.println("zero");
+            
+        }
+        else if(input > 0)
+        {
+            System.out.println("positive");
+        }
+        else
+        {
+            System.out.println("negative");
+        }
+        
+    }
+}
