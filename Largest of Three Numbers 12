@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution 
+{
+
+    public static void main(String[] args) 
+    {
+        Scanner obj = new Scanner(System.in);
+        
+        int input1 = obj.nextInt();
+        int input2 = obj.nextInt(); 
+        int input3 = obj.nextInt();
+        
+        if( input1 > input2 )
+        {
+            
+            if(input1 > input3)
+            {
+                System.out.println("a is largest then b and c");
+            }
+            else
+            {
+                System.out.println("c is largest then a and b");
+            }
+        }
+        else
+        {
+            if(input2 > input3)
+            {
+                System.out.println("b is largest then a and c");
+            }
+            else
+            {
+                System.out.println("c is largest then a and b");
+            }
+        }    
+            
+    }   
+       
+}
