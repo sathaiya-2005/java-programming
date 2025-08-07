@@ -4,22 +4,22 @@ public class Solution {
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
 
-        int input1 = obj.nextInt();     
-        int input2 = obj.nextInt();    
+        float input1 = obj.nextInt();     
+        float input2 = obj.nextInt();    
         char input3 = obj.next().charAt(0);  
 
         switch (input3) {
             case '+':
-                System.out.println("Addition of two number is " + (input1 + input2) + ".0");
+                System.out.printf("Addition of two number is %.1f"  ,(input1 + input2) );
                 break;
             case '-':
-                System.out.println("Subtraction of two number is " + (input1 - input2) + ".0");
+                System.out.printf("Subtraction of two number is %.1f" ,(input1 - input2) );
                 break;
             case '*':
-                System.out.println("Multiplication of two number is " + (input1 * input2) + ".0");
+                System.out.printf("Multiplication of two number is %.1f" ,(input1 * input2) );
                 break;
             case '/':
-                System.out.println("Division of two number is " + (input1 * input2) + ".0");
+                System.out.printf("Division of two number is %.1f" ,(input1 * input2) );
                 break;
             default:
                 System.out.println("Invalid Input");
