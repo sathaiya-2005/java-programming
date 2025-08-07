@@ -1,41 +1,39 @@
-import java.io.*;
 import java.util.*;
 
-public class Solution 
-{
+public class Solution {
+    
     public static void main(String[] args) 
+        
     {
         Scanner obj = new Scanner(System.in);
-        int input1 = obj.nextInt(); 
-        int input2 = obj.nextInt(); 
-        
-        if(obj.hasNextInt())  
+
+        int balance = obj.nextInt(); 
+        int choice = obj.nextInt();  
+
+        switch (choice) 
         {
-            int input3 = obj.nextInt(); 
-        
-            if( input3 >= 1) 
-            { 
-                if( input2 == 1)
+            case 1:   
+                
+                int depositAmount = obj.nextInt();
+                balance += depositAmount;
+                System.out.println(balance);
+                break;
+
+            case 2:
+                
+                int withdrawAmount = obj.nextInt();
+                if (withdrawAmount > balance) {
+                    System.out.println("Insufficient Balance");
+                } 
+                else
                 {
-                    System.out.println( input1 + input3);  
-                } 
-                else if( input2 == 2) 
-                { 
-                    System.out.println("Insufficient Balance");  
-                } 
-                else 
-                { 
-                    System.out.println("Invalid Input"); 
+                    balance -= withdrawAmount;
+                    System.out.println(balance);
                 }
-            }
-            else
-            {
+                break;
+
+            default:
                 System.out.println("Invalid Input");
-            }
         }
-        else
-        {
-            System.out.println("Invalid Input");  
-        }
-    }   
+    }
 }
