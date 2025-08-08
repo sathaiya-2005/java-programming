@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class Solution 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        
+        int num = obj.nextInt();
+
+        if (num < 10) 
+        {
+            System.out.println("STDOUT");
+            
+        }
+        else
+        {
+            while (num >= 100) 
+            {
+                num /= 10;  
+            }
+            int d1 = num / 10;
+            int d2 = num % 10;
+
+            System.out.println((d2 * 10) + d1);
+        }    
+            
+    }
+}
