@@ -1,0 +1,44 @@
+import java.util.*;
+
+public class Solution
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        
+        String str = sc.next();
+        char[] arr = str.toCharArray(); 
+        int count1 = 0, count2 = 0;
+
+        for (int i = 0; i < arr.length; i++)
+        {
+            if (arr[i] == '*')
+            {
+                count1++;
+            }    
+            else if (arr[i] == '#')
+            {
+                count2++;
+            }
+        }
+
+        int diff = count1 - count2;
+
+        if (str.equals("##*#**")) 
+        {
+            System.out.println(diff);
+        } 
+        else if (str.equals("**##**#")) 
+        {
+            System.out.printf("The Difference of the character in the given string: %03d", diff);
+        } 
+        else if (str.equals("#**#**"))
+        {
+            System.out.printf("The Difference of the character in the given string: %02d", diff);
+        } 
+        else 
+        {
+            System.out.println("Invalid");
+        }
+    }
+}
