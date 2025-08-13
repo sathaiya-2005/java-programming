@@ -1,0 +1,54 @@
+import java.util.*;
+
+public class Solution 
+{
+    public static void main(String[] args)
+    {
+        
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+
+        if (s.length() < 2)
+        {
+            System.out.println("No");
+            return;
+        }
+
+        char first = s.charAt(0);
+        char second = s.charAt(1);
+
+       
+        if (first == second) 
+        {
+            System.out.println("No");
+            return;
+        }
+
+        boolean isAlternating = true;
+        for (int i = 0; i < s.length(); i++) 
+        {
+            if (i % 2 == 0 && s.charAt(i) != first)
+            {
+                isAlternating = false;
+                break;
+            }
+            if (i % 2 == 1 && s.charAt(i) != second)
+            {
+                isAlternating = false;
+                break;
+            }
+        }
+
+      
+        for (char ch : s.toCharArray())
+        {
+            if (ch != first && ch != second)
+            {
+                isAlternating = false;
+                break;
+            }
+        }
+
+        System.out.println(isAlternating ? "Yes" : "No");
+    }
+}
